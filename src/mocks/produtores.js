@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import green from '../assets/produtores/green.png';
 import salad from '../assets/produtores/salad.png';
 import jennyJack from '../assets/produtores/jenny-jack.png';

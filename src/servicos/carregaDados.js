@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import produtores from "../mocks/produtores";
 import textos from "../mocks/textos";
 

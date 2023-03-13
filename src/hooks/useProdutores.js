@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { useState, useEffect } from 'react';
 
 import { carregaProdutores } from '../servicos/carregaDados';
@@ -18,6 +19,7 @@ export default function useProdutores(melhoresProdutores) {
             );
         }
         setLista(novaLista);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return lista;

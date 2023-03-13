@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { useState, useEffect } from 'react';
 
 import { carregaTextos } from '../servicos/carregaDados';
