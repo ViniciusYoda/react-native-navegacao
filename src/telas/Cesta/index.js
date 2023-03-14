@@ -21,7 +21,10 @@ export default function Cesta({ detalhes, itens, produtor }) {
         return <>
           <Topo titulo={topoCesta} />
           <View style={estilos.cesta}>
-            <Detalhes {...detalhes} produtor={produtor} />
+            <Detalhes 
+              {...detalhes} 
+              produtor={produtor} 
+            />
             <Texto style={estilos.titulo}>{ tituloItens }</Texto>
           </View>
         </>

@@ -10,7 +10,10 @@ export default function Topo({ melhoresProdutores }) {
 
   return <>
     <View style={estilos.topo}>
-      <Image source={logo} style={estilos.imagem} />
+      <Image 
+        source={logo} 
+        style={estilos.imagem} 
+      />
       <Text style={estilos.boasVindas}>{melhoresProdutores ? "" : boasVindas}</Text>
       <Text style={estilos.legenda}>{melhoresProdutores ? legendaMelhoresProdutores : legenda}</Text>
     </View>    

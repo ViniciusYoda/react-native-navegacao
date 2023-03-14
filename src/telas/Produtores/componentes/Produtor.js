@@ -18,7 +18,11 @@ export default function Produtor({ nome, imagem, distancia, estrelas, aoPression
             style={estilos.cartao}
             onPress={aoPressionar}
         >
-        <Image source={imagem} style={estilos.imagem} accessibilityLabel={nome} />
+        <Image 
+            source={imagem} 
+            style={estilos.imagem} 
+            accessibilityLabel={nome} 
+        />
         <View style={estilos.informacoes}>
             <View>
                 <Text style={estilos.nome}>{ nome }</Text>
