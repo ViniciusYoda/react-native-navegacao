@@ -20,7 +20,8 @@ export default function Estrelas({
                     aoPressionar={() => setQuantidade(i + 1)}
                     desabilitada={!editavel}
                     preenchida={i < quantidade}
-                    grande={grande} />
+                    grande={grande} 
+                />
             );
         }
 

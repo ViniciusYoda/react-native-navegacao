@@ -24,7 +24,10 @@ export default function Estrela({
             onPress={aoPressionar}
             disabled={desabilitada}
             >
-            <Image source={getImagem()} style={estilos.estrela} />
+            <Image 
+                source={getImagem()} 
+                style={estilos.estrela} 
+            />
         </TouchableOpacity>
 }
 
