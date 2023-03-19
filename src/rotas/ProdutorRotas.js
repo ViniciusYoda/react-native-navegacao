@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Produtor from '../telas/Produtor';
 import Home from '../telas/Home';
 import Cesta from '../telas/Cesta';
+import Resumo from '../telas/Resumo'
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,10 @@ export default function ProdutorRotas({ ComponentePrincipal = Home }){
       <Stack.Screen 
          name='Cesta'
          component={Cesta} 
+      />
+      <Stack.Screen 
+         name='Resumo'
+         component={Resumo} 
       />
    </Stack.Navigator>
 }

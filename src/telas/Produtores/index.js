@@ -1,12 +1,12 @@
 /* eslint-disable prettier/prettier */
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FlatList, Text, StyleSheet } from 'react-native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 
 import Produtor from './componentes/Produtor';
 import Topo from './componentes/Topo';
 import useProdutores from '../../hooks/useProdutores';
 import useTextos from '../../hooks/useTextos';
-import { useNavigation, useRoute } from '@react-navigation/native';
 
 export default function Produtores({ melhoresProdutores }) {
   const navigation = useNavigation();
@@ -14,24 +14,25 @@ export default function Produtores({ melhoresProdutores }) {
 
   const [ exibeMensagem, setExibeMensagem ] = useState(false);
 
-  const timestampCompra = route.params?.compra.timestamp
-
-  useEffect(() => {
-    setExibeMensagem(!!nomeCompra)
-    let timeout;
-    if (nomeCompra){
-      timeout = setTimeout(() => {
-        setExibeMensagem(false);
-      }, 3000)
-    }
-  }, [timestampCompra])
-
-  const nomeCompra = route.params?.compra.nome;
-  
   const lista = useProdutores(melhoresProdutores);
   const { tituloProdutores, mensagemCompra } = useTextos();
 
+  const nomeCompra = route.params?.compra.nome;
+  const timestampCompra = route.params?.compra.timestamp;
   const mensagemCompleta = mensagemCompra?.replace('$NOME', nomeCompra);
+
+  useEffect(() => {
+    setExibeMensagem(!!nomeCompra);
+    let timeout;
+
+    if (nomeCompra) {
+      timeout = setTimeout(() => {
+        setExibeMensagem(false);
+      }, 3000);
+    }
+
+    return () => clearTimeout(timeout);
+  }, [timestampCompra]);
 
   const TopoLista = () => {
     return <>
