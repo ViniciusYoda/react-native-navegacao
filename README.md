@@ -4,7 +4,7 @@
 # Lista de Produtores na Home do Orgs
 
 Projeto do curso de React Native: Navegação entre Telas na Alura.
-
+ 
 ## 🔨 Funcionalidades do projeto
 
 Neste projeto iremos juntar a tela Home e Cesta do e-commerce de produtos naturais Orgs, criando ainda a tela de Produtor.
