@@ -1,7 +1,7 @@
 
 ![Thumbnails GitHub](https://user-images.githubusercontent.com/9091491/140551733-972cbee3-ca0b-448e-ba64-a58e28e79012.png)
 
-# Lista de Produtores na Home do Orgs
+# Lista de Produtores na Home do Orgs:
 
 Projeto do curso de React Native: Navegação entre Telas na Alura.
  
